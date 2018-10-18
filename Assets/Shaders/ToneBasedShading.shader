@@ -11,9 +11,9 @@ Shader "NPR_Lab/ToneBasedShading" {
 		_OutlineColor("Outline Color", Color) = (0, 0, 0, 1) //轮廓线的颜色
 		_Specular("Specular", Color) = (1, 1, 1, 1) //高光反射的颜色
 		_Gloss("Gloss", Range(1.0, 500)) = 20 //光滑度
-		_Blue("Blue", Range(0, 1)) = 0.5
-		_Alpha("Alpha", Range(0, 1)) = 0.5
-		_Yellow("Yellow", Range(0, 1)) = 0.5
+		_Blue("Blue", Range(0, 1)) = 0.5  //纯饱和蓝色B通道分量值
+		_Alpha("Alpha", Range(0, 1)) = 0.5 
+		_Yellow("Yellow", Range(0, 1)) = 0.5 //纯饱和黄色R、G通道分量值
 		_Beta("Beta", Range(0, 1)) = 0.5
 	}
 	SubShader {
