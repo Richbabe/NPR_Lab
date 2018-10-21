@@ -156,7 +156,8 @@ Shader "NPR_Lab/ToneBasedShading" {
 				fixed3 k_warm = k_yellow + _Beta * k_d;
 
 				//计算漫反射光照强度
-				fixed3 diffuse = _LightColor0.rgb * (diff * k_cool + (1 - diff) * k_warm);
+				//fixed3 diffuse = _LightColor0.rgb * (diff * k_cool + (1 - diff) * k_warm);
+				fixed3 diffuse = _LightColor0.rgb * (diff * k_warm + (1 - diff) * k_cool);
 
 				//计算镜面反射光照强度
 				fixed3 specular = _LightColor0.rgb * _Specular.rgb * pow(max(0, dot(worldNormal, worldHalfDir)), _Gloss);
@@ -252,7 +253,8 @@ Shader "NPR_Lab/ToneBasedShading" {
 				fixed3 k_warm = k_yellow + _Beta * k_d;
 
 				//计算漫反射光照强度
-				fixed3 diffuse = _LightColor0.rgb * (diff * k_cool + (1 - diff) * k_warm);
+				//fixed3 diffuse = _LightColor0.rgb * (diff * k_cool + (1 - diff) * k_warm);
+				fixed3 diffuse = _LightColor0.rgb * (diff * k_warm + (1 - diff) * k_cool);
 
 				//计算镜面反射光照强度
 				fixed3 specular = _LightColor0.rgb * _Specular.rgb * pow(max(0, dot(worldNormal, worldHalfDir)), _Gloss);
