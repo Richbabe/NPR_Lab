@@ -7,7 +7,7 @@ Shader "NPR_Lab/ToneBasedShading" {
 	Properties {
 		_Color("Diffuse Color", Color) = (1, 1, 1, 1)
 		_MainTex("Base (RGB)", 2D) = "white" {}
-		_Outline("Outline", Range(0,1)) = 0.1 //用于控制轮廓线的宽度
+		_Outline("Outline", Range(0,1)) = 0.01 //用于控制轮廓线的宽度
 		_OutlineColor("Outline Color", Color) = (0, 0, 0, 1) //轮廓线的颜色
 		_Specular("Specular", Color) = (1, 1, 1, 1) //高光反射的颜色
 		_Gloss("Gloss", Range(1.0, 500)) = 20 //光滑度
