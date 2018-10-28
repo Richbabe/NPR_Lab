@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/AntialiasedCelShadingScene.unity
+- path: Assets/Scenes/CelShadingScene.unity
   isLoaded: 1
   isActive: 1
