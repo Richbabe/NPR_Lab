@@ -185,7 +185,7 @@
 				fixed3 diffuse = _LightColor0.rgb * albedo * tex2D(_Ramp, float2(diff, diff)).rgb;
 
 				float spec = dot(worldNormal, worldHalfDir);
-				float w = fwidth(spec) * 2.0;//实现抗锯齿
+				float w = fwidth(spec) * 2.0;
 				spec = lerp(0, 1, smoothstep(-w, w, spec + _SpecularScale - 1));
 				fixed3 specular = _Specular.rgb * spec * step(0.0001, _SpecularScale);
 
