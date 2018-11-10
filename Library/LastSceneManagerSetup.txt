@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/CelShadingScene.unity
+- path: Assets/Scenes/GaussianBlur.unity
   isLoaded: 1
   isActive: 1
