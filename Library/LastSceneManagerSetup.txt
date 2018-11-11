@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/GaussianBlur.unity
+- path: Assets/Scenes/EdgeDetect.unity
   isLoaded: 1
   isActive: 1
