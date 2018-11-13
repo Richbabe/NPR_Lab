@@ -1,4 +1,4 @@
-﻿Shader "NPR_Lab/Chapter12-EdgeDection" {
+﻿Shader "NPR_Lab/EdgeDection" {
 	Properties {
 		_MainTex ("Albedo (RGB)", 2D) = "white" {}
 		_EdgeOnly ("Edge Only", Float) = 1.0

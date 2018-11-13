@@ -51,7 +51,7 @@
 			return o;
 		}
 
-		//计算对角线上两个纹理值的插值函数，返回值为0表明这两点之间存在一条边界，反之返回1
+		//计算对角线上两个纹理值的差值的函数，返回值为0表明这两点之间存在一条边界，反之返回1
 		half CheckSame(half4 center, half4 sample) {
 			//获取两个采样点的法线和深度值
 			half2 centerNormal = center.xy;

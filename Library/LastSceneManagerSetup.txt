@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/EdgeDetectNormalAndDepth.unity
+- path: Assets/Scenes/SurfaceAngleSilhouette.unity
   isLoaded: 1
   isActive: 1
