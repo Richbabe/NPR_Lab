@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: -45
+    x: 9
     y: 63
     width: 1902
     height: 958
@@ -110,7 +110,7 @@ MonoBehaviour:
   m_MinSize: {x: 713, y: 492}
   m_MaxSize: {x: 18008, y: 14042}
   vertical: 0
-  controlID: 74
+  controlID: 52
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -134,7 +134,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 442}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 29
+  controlID: 53
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -210,7 +210,7 @@ MonoBehaviour:
   m_MinSize: {x: 234, y: 492}
   m_MaxSize: {x: 10004, y: 14042}
   vertical: 1
-  controlID: 75
+  controlID: 96
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -336,20 +336,20 @@ MonoBehaviour:
   m_DepthBufferBits: 32
   m_Pos:
     serializedVersion: 2
-    x: -45
+    x: 9
     y: 112
     width: 746
     height: 422
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 1122.8126637220766
+  lastFramingTime: 6368.26834104374
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.48175812, y: -0.21471262, z: 0.84912586}
+    m_Target: {x: 2.7641017, y: -0.0999707, z: -0.18620539}
     speed: 2
-    m_Value: {x: -0.48175812, y: -0.21471262, z: 0.84912586}
+    m_Value: {x: 2.7641017, y: -0.0999707, z: -0.18620539}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -377,9 +377,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: -0.10123736, y: 0.8753339, z: -0.20893711, w: -0.4241307}
   m_Size:
-    m_Target: 16.33521
+    m_Target: 13.078673
     speed: 2
-    m_Value: 16.33521
+    m_Value: 13.078673
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -456,7 +456,7 @@ MonoBehaviour:
   m_DepthBufferBits: 32
   m_Pos:
     serializedVersion: 2
-    x: -45
+    x: 9
     y: 555
     width: 746
     height: 444
@@ -533,16 +533,16 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: -31250
-    y: -31951
+    x: 759
+    y: 112
     width: 537
     height: 487
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 
-    m_LastClickedID: 0
-    m_ExpandedIDs: 4cf0feff14c3ffff92dbffff36ddffff5adffffff4eaffff9efbffff00000000
+    m_SelectedIDs: 9afbffff
+    m_LastClickedID: -1126
+    m_ExpandedIDs: 9cfbffff9efbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -561,7 +561,7 @@ MonoBehaviour:
       m_ClientGUIView: {fileID: 10}
     m_SearchString: 
   m_ExpandedScenes:
-  - SurfaceAngleSilhouette
+  - StylizedHighlightsScene
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
@@ -587,7 +587,7 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 705
+    x: 759
     y: 620
     width: 537
     height: 379
@@ -604,19 +604,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Materials
+    - Assets/Shaders
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Materials
+  - Assets/Shaders
   m_LastFoldersGridSize: 16
   m_LastProjectPath: E:\github\NPR_Lab
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: d8270000
-    m_LastClickedID: 10200
-    m_ExpandedIDs: 000000008c270000b827000000ca9a3bffffff7f
+    m_SelectedIDs: a8280000
+    m_LastClickedID: 10408
+    m_ExpandedIDs: 0000000092270000ca270000ec27000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -644,7 +644,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000008c270000
+    m_ExpandedIDs: 0000000092270000ca270000ec270000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -721,12 +721,12 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 1246
+    x: 1300
     y: 112
     width: 611
     height: 887
   m_PersistentViewDataDictionary: {fileID: 0}
-  m_ScrollPosition: {x: 0, y: 0}
+  m_ScrollPosition: {x: 0, y: 185.95508}
   m_InspectorMode: 0
   m_PreviewResizer:
     m_CachedPref: 160

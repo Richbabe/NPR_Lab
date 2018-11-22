@@ -292,6 +292,7 @@
     <None Include="Assets\Shaders\CelShading.shader" />
     <None Include="Assets\Shaders\EdgeDection.shader" />
     <None Include="Assets\Shaders\EdgeDetectNormalAndDepth.shader" />
+    <None Include="Assets\Shaders\StylizedHighlights.shader" />
     <None Include="Assets\Shaders\SurfaceAngleSilhouette.shader" />
     <None Include="Assets\Shaders\ToneBasedShading.shader" />
   </ItemGroup>
