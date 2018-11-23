@@ -145,6 +145,7 @@ Shader "NPR_Lab/StylizedHighlights" {
 
 				//平移操作(Translation)
 				tangentHalfDir = tangentHalfDir + fixed3(_TranslationX, _TranslationY, 0);
+				tangentHalfDir = normalize(tangentHalfDir);
 				
 				//分裂操作(Spilt)
 				fixed signX = 1;
