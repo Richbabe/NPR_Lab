@@ -80,9 +80,10 @@
 				half3 wrapDiffuseTerm = _LightColor0.rgb * difWarping;
 				//计算Ambient cube term
 				float3 ambientCubeTerm = texCUBE(_DiffuseCubeMap, worldNormal).rgb * _Amount;
+				//计算View Independent Lighting Terms
+				half3 viewIndependentLightTerms = kd * (ambientCubeTerm + wrapDiffuseTerm);
 
-
-				return fixed4(kd,1.0);
+				return fixed4(viewIndependentLightTerms,1.0);
 			}
 			ENDCG
 		}
