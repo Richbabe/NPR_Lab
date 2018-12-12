@@ -3,6 +3,8 @@
 		_Color("Color", Color) = (1,1,1,1)
 		_MainTex ("Albedo (RGB)", 2D) = "white" {}
 		_RampTex ("Ramp Texture", 2D) = "white" {}
+		_DiffuseCubeMap("Diffuse Convolution Cubemap", Cube) = ""{}
+		_Amount("Diffuse Amount", Range(-10,10)) = 1
 	}
 	SubShader {
 		Pass{
@@ -26,6 +28,8 @@
 			float4 _MainTex_ST;
 			sampler2D _RampTex;//漫反射变形贴图，通过查找映射创建一个硬阴影
 			float4 _RampTex_ST;
+			samplerCUBE _DiffuseCubeMap;
+			float _Amount;
 
 			//定义顶点着色器输入
 			struct a2v {
@@ -64,20 +68,21 @@
 				fixed3 worldNormal = normalize(i.worldNormal);
 				fixed3 worldLightDir = normalize(UnityWorldSpaceLightDir(i.worldPos));
 
-				//计算非视角相关部分
+				//***计算非视角相关部分***
+				//计算漫反射系数kd
 				fixed4 c = tex2D(_MainTex, i.mainTex_uv) * _Color;
 			    fixed3 kd = c.rgb;//albedo
-
+				//计算Wraped diffuse term
 				half difLight = dot(worldNormal, worldLightDir);//n·l
 				half halfLambert = pow(0.5 * difLight + 0.5, 1.0);//半兰伯特因子
-
 				half3 ramp = tex2D(_RampTex, float2(halfLambert, halfLambert)).rgb;//漫反射变形
 				half3 difWarping = ramp * 2;//乘2使得模型更加明亮
-				half3 difLightTerm = _LightColor0.rgb * difWarping;
+				half3 wrapDiffuseTerm = _LightColor0.rgb * difWarping;
+				//计算Ambient cube term
+				float3 ambientCubeTerm = texCUBE(_DiffuseCubeMap, worldNormal).rgb * _Amount;
 
 
-
-				return fixed4(difLightTerm,1.0);
+				return fixed4(kd,1.0);
 			}
 			ENDCG
 		}
