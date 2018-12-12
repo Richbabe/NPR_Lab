@@ -295,6 +295,9 @@
     <None Include="Assets\Shaders\StylizedHighlights.shader" />
     <None Include="Assets\Shaders\SurfaceAngleSilhouette.shader" />
     <None Include="Assets\Shaders\ToneBasedShading.shader" />
+    <None Include="Assets\TF2\Materials\Editor\NewUnlitShader.shader" />
+    <None Include="Assets\TF2\Shader\TeamFotress2.shader" />
+    <None Include="Assets\TF2\player\TF2.shader" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
