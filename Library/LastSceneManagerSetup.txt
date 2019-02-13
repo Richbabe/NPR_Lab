@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/TF2/scene.unity
+- path: Assets/Scenes/HatchingScene.unity
   isLoaded: 1
   isActive: 1
