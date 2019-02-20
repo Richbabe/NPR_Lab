@@ -294,6 +294,7 @@
     <None Include="Assets\Shaders\EdgeDection.shader" />
     <None Include="Assets\Shaders\EdgeDetectNormalAndDepth.shader" />
     <None Include="Assets\Shaders\Hatching.shader" />
+    <None Include="Assets\Shaders\PencilSketchShading.shader" />
     <None Include="Assets\Shaders\StylizedHighlights.shader" />
     <None Include="Assets\Shaders\SurfaceAngleSilhouette.shader" />
     <None Include="Assets\Shaders\ToneBasedShading.shader" />
