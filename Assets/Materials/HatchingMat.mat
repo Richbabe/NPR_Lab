@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: HatchingMat
-  m_Shader: {fileID: 4800000, guid: f4c4dfd8966824244960e62338a724be, type: 3}
+  m_Shader: {fileID: 4800000, guid: b892f41b282ce7d46987f4011f348fa5, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -63,27 +63,27 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Level1:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 4cf7602831d3cfe48916a05febbd737b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Level2:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 4bbe1f9d06dae31448dae98de41c1944, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Level3:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 3065a1b24d470844d90f060f0ac00e4f, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Level4:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 980a4590e00a2054cbdebe11ef657091, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Level5:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 506ca0f744721544f836c07480546c04, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Level6:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 997a2d2fd6ddeab429a98ddde22bb686, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
@@ -118,7 +118,7 @@ Material:
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
-    - _TileFactor: 2.5
+    - _TileFactor: 1.89
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
